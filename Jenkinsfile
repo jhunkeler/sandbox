@@ -13,5 +13,5 @@ bc.data_upload = [
     ],
 ]
 
-utils.matrix(bc)
+utils.run(bc)
 
