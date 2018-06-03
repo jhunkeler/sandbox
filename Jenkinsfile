@@ -1,17 +1,18 @@
 if (utils.scm_checkout()) return
 
-bc = BuildConfig()
+data_configs = []
+dc = new DataConfig()
+dc.insert('test', '{"test":"alive"}')
+
+configs += dc
+
+bc = new BuildConfig()
 bc.nodetype = ''
 bc.build_mode = 'sandbox'
 bc.build_cmds = [
-    "echo hello world > hello.txt",
-    "echo word hello > world.test",
+    "echo {\"test\":\"alive2\"} > alive.json"
 ]
-bc.data_upload = [
-    'generic-local/sandbox': [
-        '': ['*.txt', '*.test']
-    ],
-]
+bc.test_artifacts = data_configs
 
 utils.run(bc)
 
