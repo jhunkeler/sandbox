@@ -4,7 +4,7 @@ data_configs = []
 dc = new DataConfig()
 dc.insert('test', '{"test":"alive"}')
 
-configs += dc
+data_configs += dc
 
 bc = new BuildConfig()
 bc.nodetype = 'master'
