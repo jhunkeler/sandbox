@@ -7,7 +7,7 @@ dc.insert('test', '{"test":"alive"}')
 configs += dc
 
 bc = new BuildConfig()
-bc.nodetype = ''
+bc.nodetype = 'master'
 bc.build_mode = 'sandbox'
 bc.build_cmds = [
     "echo {\"test\":\"alive2\"} > alive.json"
