@@ -3,12 +3,12 @@ if (utils.scm_checkout()) return
 println('WTF')
 data_configs = []
 println('WTF')
-dc = new DataConfig()
+//dc = new DataConfig()
 println('WTF')
-dc.insert('test', '{"test":"alive"}')
+//dc.insert('test', '{"test":"alive"}')
 println('WTF')
 
-data_configs += dc
+//data_configs += dc
 println('WTF')
 
 bc = new BuildConfig()
@@ -19,7 +19,7 @@ bc.build_cmds = ["echo hello"]
 //bc.build_cmds = [
 //    "echo {\"test\":\"alive2\"} > alive.json"
 //]
-bc.test_artifacts = data_configs
+//bc.test_artifacts = data_configs
 
 utils.run(bc)
 
