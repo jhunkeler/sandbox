@@ -9,5 +9,5 @@ bc.build_mode = 'sandbox'
 bc.build_cmds = ["echo hello"]
 //bc.test_artifacts = dc
 
-utils.run(bc)
+utils.run(bc, concurrent=false)
 
