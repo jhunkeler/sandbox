@@ -24,7 +24,6 @@ def body = """
     }
 }
 """
-}
 dc = new DataConfig()
 dc.insert('PLZWORK', body)
 bc = new BuildConfig()
