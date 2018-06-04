@@ -1,7 +1,7 @@
 if (utils.scm_checkout()) return
 
 dc = new DataConfig()
-dc.insert('test', '{"test":"testing"}')
+#dc.insert('test', '{"test":"testing"}')
 bc = new BuildConfig()
 bc.nodetype = 'linux'
 bc.build_mode = 'example'
