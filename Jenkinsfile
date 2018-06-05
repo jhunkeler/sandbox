@@ -8,6 +8,7 @@ bc.build_cmds = ["echo hello"]
 //bc.test_cmds = [
 //    'echo [{"test2":"alive2"}] > test2.json',
 //]
+bc.test_server_id = 'artifactory'
 bc.test_artifacts = [dc]
 matrix = [bc]
 utils.run(matrix)
